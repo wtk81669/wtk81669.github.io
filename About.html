@@ -5,16 +5,56 @@
 	<TITLE>About Me</TITLE>
 		<style type="text/css">
 		P {font-family:"Times New Roman"}
-		Body {background-color:#2be2d6}
+		Body {background-image: url("paper.gif");     
+			background-repeat: no-repeat;
+			background-position: top center ;
+			background-size: cover;}
 		H2 {Font-Family: "Times New Roman"}
 		H1 {Font-Family: "Book Antiqua"}
-		.Special {Font-Size:16pt; color:232323}
-		table.center {width:70%; margin-left:15%; margin-right:15%;}
-		TD {Background-color:#edbc5c}
+		.Special {Font-Size:22pt; color:#2d2d2d}
+		.Special1 {Font-Size:20pt; color:#2f2f2f}
+		.Special2 {Font-Size:16pt; color:#212121}
+		.Special3 {Font-Size:14pt; color:#212121}
+		.Special4 {Font-Size:8pt; color:#212121}
+		div.second {margin-left: 200px; margin-top: 50px; margin-right: 300px;}
+		div.third {margin-left: 200px; margin-top: 50px; margin-right: 800px;}
+		div.first {opacity: 0.8; margin-left: 160px;}
+		div.fourth {margin-top: 50px; margin-left: 160px;}
+		div.fifth {margin-left: 100px; margin-right: 100px;}
+		div.six {margin-left: 160px;}
+		table.center {Background-color:#edbc5c; width:70%; margin-left:15%; margin-right:15%;}
+		table.style1{Background-color:#dbdbdb; margin-left:11%; margin-right:0%; width:89%;}
+		
+		div.sidenav {height: 100%;
+    		width: 160px;
+    		position: fixed;
+    		z-index: 1;
+    		top: 0;
+    		left: 0;
+    		background-color: #111;
+    		overflow-x: hidden;
+    		padding-top: 20px;}
+
+		div.sidenav a {padding: 6px 8px 6px 16px;
+    		text-decoration: none;
+    		font-size: 23px;
+    		color: #818181;
+    		display: block;}	
+	
+		.sidenav a:hover {color: #f1f1f1;}
 		</style>
 	</HEAD>
 <Body>
-<div style="text-align:center">
+
+<header>
+<div class="sidenav">
+<a HREF="Index.html">Home</a>
+<a HREF="Books.html">My Books</a>
+<a HREF="About.html">About Me</a>
+<a HREF="FAQ.html">F.A.Q.</a>
+</div>
+
+<div style="text-align:center" class="first">
 <table border=2 class="center">
 <tr> 
 <td>
@@ -32,9 +72,41 @@
 </tr>
 </table>
 </div>
-<div style="text-align:center">
-<h1 class='special'>
+</header>
+
+<main>
+<div style="text-align:center" class="fourth">
+<h1 class='Special'>
 About the Author
 </h1>
 </div>
+<table border=1 class="style1">
+<tr>
+<td>
+<div class="fifth">
+<p>
+     Thomas Kelly was born in Texas, and was adopted before he was even born! He moved from Texas to Georgia, and lived there with his family until his parents divorced, when he was the age of 5. He then moved to Iowa with his mother and sister, before moving back to Georgia with his dad for high school. Currently a student at the University of Georgia, Thomas is studying English and Accounting, and he hopes that one day, he will become a well-known author of fiction. 
+</p>
+<p>
+ 
+</p>
+<p>
+"Though I haven't been writing for a very long time, I hope that one day my writing will be as well-known as Shakespeare's, Hemingway's, Shelley's, and all those other famous writers we are forced to study in school. Writing is my passion and my love, and I hope that I will find other people willing to read my work and who will like it as much as my friends Aaron and Moira."
+</p>
+<p>
+~Thomas Kelly
+</p>
+</div>
+</td>
+</tr>
+</table>
+</main>
+
+<footer>
+<div style="text-align:center" class="fourth">
+<p class="Special4">
+All images on this website come from https://unsplash.com/
+</p>
+</footer>
+
 </body>

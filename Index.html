@@ -9,27 +9,52 @@
 			background-repeat: no-repeat;
 			background-position: top center ;
 			background-size: cover;}
-	H1 {Font-Family: "Book Antiqua"}
-	H2 {Font-Family: "Times New Roman"} 
+		H1 {Font-Family: "Book Antiqua"}
+		H2 {Font-Family: "Times New Roman"} 
+		
 		.Special {Font-Size:22pt; color:#d6f8f9}
 		.Special1 {Font-Size:20pt; color:#d6f8f9}
 		.Special2 {Font-Size:16pt; color:#d6f8f9}
 		.Special3 {Font-Size:22pt; color:#adc8ff}
 		.Special4 {Font-Size:8pt; color:#d6f8f9}
+		
 		table.center {width:70%; margin-left:15%; margin-right:15%;}
 		TD {Background-color:#edbc5c}
-		div.third {margin-left: 250px; margin-top: 150px;}
-		div.second {margin-left: 150px; margin-top: 100px;}
-		div.first {opacity: 0.7;}
 		
+		div.fourth {margin-left: 160px;}
+		div.third {margin-left: 410px; margin-top: 100px;}
+		div.second {margin-left: 310px; margin-top: 100px;}
+		div.first {opacity: 0.7; margin-left: 160px;}
+		
+		div.sidenav {height: 100%;
+    		width: 160px;
+    		position: fixed;
+    		z-index: 1;
+    		top: 0;
+    		left: 0;
+    		background-color: #111;
+    		overflow-x: hidden;
+    		padding-top: 20px;}
+
+		div.sidenav a {padding: 6px 8px 6px 16px;
+    		text-decoration: none;
+    		font-size: 25px;
+    		color: #818181;
+    		display: block;}	
+	
+		.sidenav a:hover {color: #f1f1f1;}	
 		</style>
 	</HEAD>
 
 <body>
-<div style="text-align:center">
-<h1 class="Special3">
-Welcome to my Website
-</h1>
+
+<header>
+
+<div class="sidenav">
+<a HREF="Index.html">Home</a>
+<a HREF="Books.html">My Books</a>
+<a HREF="About.html">About Me</a>
+<a HREF="FAQ.html">F.A.Q.</a>
 </div>
 <div style="text-align:center" class="first">
 <table border=2 class="center">
@@ -49,6 +74,15 @@ Welcome to my Website
 </tr>
 </table>
 </div>
+
+<main>
+
+<div style="text-align:center" class="fourth">
+<h1 class="Special3">
+Welcome to my Website
+</h1>
+</div>
+
 <div class="second">
 <p class="Special">
 News
@@ -76,7 +110,14 @@ More news later!
 <p class="Special2">
 Thank you for coming!
 </p>
-<div style="text-align:center">
+</div>
+</main>
+
+<footer>
+<div style="text-align:center" class="fourth">
 <p class="Special4">
 All images on this website come from https://unsplash.com/
 </p>
+</footer>
+
+</body>

@@ -18,12 +18,40 @@
 		.Special4 {Font-Size:8pt; color:#d6f8f9}
 		table.center {width:70%; margin-left:15%; margin-right:15%;}
 		TD {Background-color:#edbc5c}
-		div.second {margin-left: 150px; margin-top: 50px; margin-right: 300px;}
-		div.third {margin-left: 150px; margin-top: 50px; margin-right: 800px;}
-		div.first {opacity: 0.7;}
+		div.second {margin-left: 200px; margin-top: 50px; margin-right: 300px;}
+		div.third {margin-left: 200px; margin-top: 50px; margin-right: 800px;}
+		div.first {opacity: 0.7; margin-left: 160px}
+		div.fourth {margin-left: 160px;}
+
+		div.sidenav {height: 100%;
+    		width: 160px;
+    		position: fixed;
+    		z-index: 1;
+    		top: 0;
+    		left: 0;
+    		background-color: #111;
+    		overflow-x: hidden;
+    		padding-top: 20px;}
+
+		div.sidenav a {padding: 6px 8px 6px 16px;
+    		text-decoration: none;
+    		font-size: 25px;
+    		color: #818181;
+    		display: block;}	
+	
+		.sidenav a:hover {color: #f1f1f1;}
 		</style>
 	</HEAD>
 <Body>
+
+<header>
+<div class="sidenav">
+<a HREF="Index.html">Home</a>
+<a HREF="Books.html">My Books</a>
+<a HREF="About.html">About Me</a>
+<a HREF="FAQ.html">F.A.Q.</a>
+</div>
+
 <div style="text-align:center" class="first">
 <table border=2 class="center">
 <tr> 
@@ -42,23 +70,30 @@
 </tr>
 </table>
 </div>
-<div style="text-align:center">
+<div style="text-align:center" class="fourth">
 <h1 class="Special">
 My Books
 </h1>
 </div>
+</header>
+
+<main>
 <div class="third">
 <h2 class="Special1">
 Published Books
 </h2>
+<figure>
 <p>
 <a HREF=https://www.amazon.com/Alex-Lugara-Prophecy-William-Kelly/dp/1718191812>
 <img src="Book-Cover.gif" alt="Book Cover" height="300" width="188">
 </a>
 </p>
 <p class='Special4'>
+<figcaption>
 Click the image to be redirected to Amazon
 </p>
+</figcaption>
+</figure>
 <p class="Special2">
 Alex Lugara & The Prophecy of Light
 </p>
@@ -83,4 +118,13 @@ The Wheel of Bast
 To Be Written
 </p>
 </div>
+</main>
+
+<footer>
+<div style="text-align:center" class="fourth">
+<p class="Special4">
+All images on this website come from https://unsplash.com/
+</p>
+</footer>
+
 </body>
